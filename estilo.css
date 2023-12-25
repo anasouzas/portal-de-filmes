@@ -1,0 +1,1137 @@
+/* Codigo CSS desenvolvido por Ana Cristina de Souza Silva, numero de matricula: 736038 */
+
+/* Geral */
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+@media screen and ( max-width: 1000px ){
+    body {
+        overflow-x: hidden !important;
+    }
+}
+button {
+    border: 1px transparent;
+    background: transparent;
+    color:black;
+    cursor: pointer;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+hr {
+    margin: 0px;
+    border: 1px solid black;
+}
+
+#row-btn {
+    padding-bottom: 10px;
+}
+
+.carousel-inner {
+    display: table;
+}
+
+.carousel-inner.carousel-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.carousel-item {
+    padding-top: 40px;
+}
+
+div.card {
+    background-color: transparent;
+    border: none;
+}
+
+#btn_mais { 
+    background-color: #1E90FF;
+    float: right;
+    position: static;
+} /* Estilo geral para as seções de destaque 
+     e avaliações */
+
+#btn_mais:hover {
+    background-color: yellow;
+}
+
+div #col-btn {
+    padding-right: 30px;
+} /* Estilo geral para as seções de destaque
+     e making of */
+
+.checked {
+    color: orange;
+}
+    
+span.fa-star {
+    display: inline;
+}
+    
+span.fa-star:hover{
+    cursor: pointer;
+    color: orange;
+}
+
+.clear{
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    #row-btn {
+      display: none;
+    }
+}
+
+/* Cabeçalho */
+
+#cabecalho-row {
+    height: fit-content;
+}
+
+#logo-col1 {
+    height: fit-content;
+    width: fit-content;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+
+#navbar-col {
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#navbar1 {
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: lightgray;
+    width: 100%;
+}
+
+#navbarSupportedContent {
+    width: fit-content;
+}
+nav.navbar {
+    background-color:transparent;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+}
+
+#navbar {
+    padding-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.navbar-collapse.topnav-right.collapse.show {
+    padding-bottom: 20px;
+}
+
+#destaque-nav, #lancamento-nav, #entrevista-nav, #novidade-nav, #avaliacao-nav {
+    padding-left: 10px;
+}
+
+form {
+    display:flex;
+    flex-direction:row;
+    width: fit-content;
+    padding-left: 10px;
+}
+
+form:focus {
+    box-shadow: none;
+}
+.search input {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 0px;
+    background-color: transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#pesquisar:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/*Seção Lançamentos */
+
+#secao_lancamentos {
+    height: 600px;
+    background-color: #1E90FF;
+}
+
+#secao_lancamentos h3 {
+    padding-top: 8px;
+}
+
+#col-lancamento {
+    padding-right: 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#lancamento {
+    background-color: yellow;
+}
+
+#lancamento_video {
+    border: none;
+    border-radius: 3%;
+}
+
+#carousel-1 {
+    height: 520px;
+}
+
+div #resumo {
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+    #resumo {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #video {
+      display: none;
+    }
+}
+
+/* Seção Destaques */
+
+#secao_destaques {
+    padding-top: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+
+#secao_destaques h4 {
+    color: black;
+}
+
+#secao_destaques #drop_1 #menu1{
+    color: black;
+} 
+
+#box_menu {
+    background-color: lightgray;
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-menu-arrow::after {
+    content: '';
+    border: 4px solid transparent;
+    border-top: 0px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#menu_item #categoria_name {
+    color: black;
+    padding-left: 6px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menu_item {
+    height: 40px;
+}
+
+#menu_item:hover {
+    background-color: rgb(161, 161, 161);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown #menu1 {  /* DAR UMA OLHADA NISSO DEPOIS, ID se repetindo */
+    border: 1px solid grey;
+    width: 200px;
+    text-align: left;
+}
+
+#img_posters {
+    box-shadow: none;
+} 
+
+#img_posters:hover {
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+
+@media screen and (max-width: 1000px) {
+    #secao_destaques {
+      border-bottom: 2px solid black;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #posters {
+      display: none;
+    }
+}
+
+@media not screen and (max-width: 1000px) {
+    #carousel-2 {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel-2 {
+      width: fit-content;
+      height: fit-content;
+      padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #slides2 {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel2-item {
+      width: fit-content;
+      height: fit-content;
+      padding-top: 0px
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel_posters {
+      width: 100%;
+      height: auto;
+    }
+}
+
+/* Seção Últimas Avaliações */
+
+#avaliacoes {
+    padding-top: 100x;
+    column-gap: 0px;
+    width: 100%;
+}
+
+#avaliador {
+    width: 20%;
+    border-radius: 50%;
+    display: inline;
+    float: left;
+}
+
+#avaliador_name {
+    display: inline;
+    float: right;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#ult_avali {
+    padding-left: 15px;
+    padding-top: 20px;
+    height: fit-content;
+    background-color: transparent;
+}
+
+#ult_avali_title {
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+#data {
+    display: inline;
+    float: right;
+    padding-left: 20px;
+}
+
+#avali_card .card-header {
+    border-bottom: none;
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    color: black;
+}
+
+#avali_card .card-body {
+    text-align: justify;
+    margin-bottom: -30px;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#avali_text {
+    height: 200px;
+}
+
+#avali_card .card-footer {
+    border-top: none;
+    background-color: transparent;
+    color: black;
+}
+
+div #col-btn2 {
+    padding-right: 30px;
+}
+
+#carousel-avali {
+    height: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+    #avaliacoes {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #ult_avali {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #row-title {
+      height: 30px;
+      padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #avali_card .card-header {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #avali_card .card-body {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #avali_card .card-footer {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media not screen and (max-width: 1000px) {
+    #carousel_avali {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel_avali {
+      width: 100%;
+      height: 150%;
+      background-color: transparent;
+    }
+}
+
+@media not screen and (max-width: 1000px) {
+    #carousel-3 {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel-3 {
+      width: fit-content;
+      height: fit-content;
+      padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #slides3 {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+/* Seção Entrevistas e Making Of */
+
+#secao_making {
+    background-color: #1E90FF;
+    height: fit-content;
+    width: 100%;
+}
+
+#container-making-title {
+    width: 100%;
+    height: auto;
+}
+
+#making_row {
+    width: 100%;
+}
+
+#col-making-content {
+    padding-left: 0px;
+    padding-left: 0px;
+}
+
+#row-making-title {
+    margin-bottom: 20px;
+}
+
+#col-making-title {
+    height: fit-content;
+    width: 100%;
+    padding-left: 0.5%;
+    padding-right: 0px;
+}
+
+#secao_making_title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+#container2-making {
+    width: 100%;
+    height: fit-content;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#makingof1 { 
+    width: 28%; 
+    height: fit-content;
+    margin-right: 5%;
+} 
+
+#makingof2 { 
+    width: 28%; 
+    height: fit-content; 
+    margin-right: 5%;
+}
+
+#makingof3 { 
+    width: 28%; 
+    height: fit-content; 
+}
+
+#makingof1 .card-header {
+    height: 300px;
+    width: fit-content;
+    background-color: transparent;
+    border-bottom: 0px;
+    padding-left: none;
+    padding-right: none;
+}
+
+#makingof2 .card-header {
+    height: 300px;
+    width: fit-content;
+    background-color: transparent;
+    border-bottom: 0px;
+    padding-left: none;
+    padding-right: none;
+}
+
+#makingof3 .card-header {
+    height: 300px;
+    width: fit-content;
+    background-color: transparent;
+    border-bottom: 0px;
+    padding-left: none;
+    padding-right: none;
+}
+
+#filme_title {
+    font-size: 20px;
+}
+
+#making_video {
+    border: none;
+    height: 90%;
+    width: auto;
+    border-radius: 3%;
+}
+
+#makingof1 .card-body {
+    padding-left: none;
+    padding-right: none;
+    width: 340px;
+}
+
+#makingof2 .card-body {
+    padding-left: none;
+    padding-right: none;
+    width: 340px;
+}
+
+#makingof3 .card-body {
+    padding-left: none;
+    padding-right: none;
+    width: 340px;
+}
+
+#col-btn3 {
+    padding-right: 45px;
+    padding-left: 0px;
+}
+
+#btn_mais2 { 
+    background-color: yellow;
+    float: right;
+    position: static;
+}
+
+#btn_mais2:hover {
+    background-color: white;
+}
+
+
+@media screen and ( max-width: 1000px ) {
+    #container2-making {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #row-making-title {
+        margin-bottom: 0px;
+        height: fit-content;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #container-making-title {
+        padding-top: 2%;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #secao_making_title {
+        padding-left: 0px;
+        padding-top: 2%;
+        padding-bottom: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+@media not screen and  ( max-width: 1000px ) {
+    #making_carousel {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #making_carousel {
+        width: 100%;
+        height: fit-content;
+        margin-right: 0px;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #container_making{
+        position: relative;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #carousel-4 {
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #carousel_makingof{
+        height: auto;
+        width: 100%;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #slides4 {
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #carousel4-item {
+      width: fit-content;
+      height: fit-content;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #carousel4_conteudo {
+        height: fit-content;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #chamada_video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #clique_makingof {
+        color: yellow;
+    }
+}
+
+@media screen and  ( max-width: 1000px ) {
+    #clique_makingof:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/* Seção Novidades e Sobre */
+
+#novidade_sobre {
+    height: 900px;
+    padding-bottom: 15px;
+}
+
+#novidade_sobre_row {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+#novidade_title {
+    padding-left:  10px;
+    color: black;
+}
+
+#sobre_title {
+    color: black;
+}
+
+#materia_card .card-header {
+    margin-top: -18px;
+    color: black;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#materia_card .card-body{
+    margin-top: -40px;
+    color: black;
+    background-color: transparent;
+    height: fit-content;   
+    padding-bottom: 0px;
+}
+
+#materia_card .card-body p{
+    margin-bottom: 5px;
+}
+
+#col-tag {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#tag-btn {
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 70%;
+    height: fit-content;
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#tag-btn:hover {
+    background-color: #1E90FF;
+}
+
+#hr1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#hr2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#cada_novidade {
+    height: fit-content;
+    width: fit-content;
+}
+
+#col_novi {
+    height: fit-content;
+    padding-top: 40px;
+}
+
+#col_novi2 {
+    height: fit-content;
+    padding-top: 21px;
+}
+
+#novi_img {
+    display: inline;
+    float: left;
+    width: 35%;
+    height: auto;
+}
+
+#col_text2 {
+    word-wrap: break-word;
+    color: black;
+    padding-top: 35px;
+    text-align: justify;
+}
+
+#editorial_title {
+    color: black;
+}
+
+#user_icon {
+    color: black;
+}
+
+#my_id {
+    color: black;
+}
+
+#novidade_sobre #my_user {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 0px;
+    font-size: 20px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+#redes_sociais {
+    color: black;
+}
+
+#novidade_sobre .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+@media screen and ( max-width: 1000px ) {
+    #cada_novidade {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #sobre1 {
+        display: none;
+    }
+}
+
+@media not screen and ( max-width: 1000px ) {
+    #sobre2 {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #sobre_novidade_row {
+        width: fit-content;
+    }
+}
+
+@media not screen and ( max-width: 1000px ) {
+    #responsive_novidade_sobre {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #responsive_novidade_sobre {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #lista_de_novidade {
+        list-style-type: none;
+        padding-top: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #materia_title {
+        padding-top: 0px;
+        text-align: justify;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #leia_mais_arrow:hover {
+        text-decoration: none;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #sobre2 {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #sobre_row {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #lista_sobre {
+        list-style-type: none;
+        padding-top: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #sobre_items {
+        padding-top: 0px;
+        text-align: justify;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #editorial-col {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #editorial_row {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #lista_editorial {
+        list-style-type: none;
+        padding-top: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 24px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #editorial_items {
+        padding-top: 0px;
+        padding-right: 0px;
+        text-align: justify;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #novidade_sobre {
+        height: fit-content;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #redes-row {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #redes-col {
+        padding-left: 40px;
+        padding-top: 0px;
+    }
+}
+
+/* Rodapé */
+
+#rodape {
+    background-color: lightgray;
+    height: fit-content;
+    border: none;
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#direitos_autorais {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    height: fit-content;
+}
+
+#logo_rodape {
+    height: 100px;
+    width: auto;
+    padding-top: 20px;
+    float: right;
+}
+
+@media screen and ( max-width: 1000px ) {
+    #rodape {
+    background-color: lightgray;
+    height: fit-content;
+    border: none;
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #direitos_autorais {
+    font-size: 90%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: fit-content;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #direitos_autorais p {
+    margin-bottom: 0px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #logo-col {
+    padding-left: 0px;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #logo_rodape {
+        padding-left: 10px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    #rodape_row {
+    height: fit-content;
+    }
+}

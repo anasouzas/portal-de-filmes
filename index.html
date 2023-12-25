@@ -1,0 +1,754 @@
+<!-- Codigo HTML desenvolvido por Ana Cristina de Souza Silva, numero de matricula: 736038 -->
+
+<!DOCTYPE html >
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+        <!--CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <link rel="stylesheet" href= "estilo.css">
+
+        <title>Almacine - Portal de Filmes</title>
+    </head>
+    <body>
+        
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light" id = "navbar1">
+            <a class="navbar-brand" href="#"><img src = "./logo-Almacine.png" alt = "Logo" id = "logo"></a>
+            <button class="navbar-toggler" style="margin-right: 10px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse topnav-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" id = "navbar">
+                    <li class="nav-item" id = "nav-item">
+                        <a class="nav-link" id = "lancamento-nav" href="#">Lançamentos</span></a>
+                    </li>
+                    <li class="nav-item" id = "nav-item">
+                        <a class="nav-link" id = "destaque-nav" href="#">Em Destaque</a>
+                    </li>
+                    <li class="nav-item" id = "nav-item">
+                        <a class="nav-link" id = "avaliacao-nav" href="#">Avaliações</a>
+                    </li>
+                    <li class="nav-item" id = "nav-item">
+                        <a class="nav-link" id= "entrevista-nav" href="#">Entrevistas e Making Of</a>
+                    </li>
+                    <li class="nav-item" id = "nav-item-no">
+                        <a class="nav-link" id = "novidade-nav" href="#">Novidades</a>
+                    </li>
+                </ul>
+                <div class = "form" id = "form-pesquisa">
+                    <form class="search" action="">
+                        <button type="submit"><i class="fa fa-search my-2 my-sm-0" id="lupa"></i></button>
+                        <input class = "form-control mr-sm-2" type="text" placeholder="Pesquisar filmes" name="pesquisa" id = "pesquisar">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Seção Lançamentos-->
+        <div class =  "container-fluid w-100" id = "secao_lancamentos">
+            <div class = "row" id = "lancamento">
+                <div class = "col-12" id = "col-lancamento">
+                    <h3>Lançamentos</h3>
+                </div>
+            </div>
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class = "container">
+                            <div class = "row" id="slides" >
+                                <div class = "col-lg-6 col-md-6" id="video">
+                                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/dBUsVqqDhsY" id = "lancamento_video"></iframe>
+                                </div>
+                                <div class = "col-lg-6 col-md-6" id = "resumo">
+                                    <h4>Ponto Vermelho</h4>
+                                    <p><b>Sinopse:</b> Com o relacionamento em crise e um bebê a caminho,
+                                    um casal decide passar uns dias nas montanhas para reacender a paixão,
+                                    mas acaba na mira de assassinos impiedosos.</p>
+                                    <p>
+                                    <b>Diretor: </b>Alain Darborg |       
+                                    <b>Roteiro: </b>Alain Darborg e Per Dickson |   
+                                    <b>Estreia: </b> 2021</p>
+                                    <p><b>Elenco: </b>Johannes Kuhnke | Nanna Blondell | Anastasios Soulis | Kalled Mustonen | Tomas Bergström</p>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container">
+                            <div class = "row" id="slides" >
+                                <div class = "col-lg-6 col-md-6" id="video">
+                                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/SOXas8STWK8" id = "lancamento_video"></iframe>
+                                </div>
+                                <div class = "col-lg-6 col-md-6" id = "resumo">
+                                    <h4>Bliss: Em Busca da Felicidade</h4>
+                                    <p><b>Sinopse:</b> Greg (Owen Wilson) é um homem divorciado que vê sua vida
+                                    toda mudar quando conhece Isabel (Salma Hayek). Ela afirma que o mundo onde vivem não passa de uma simulação 
+                                    tecnológica e que ninguém, além deles, é real. Aos poucos, Greg passa a acreditar em Isabel.</p>
+                                    <p><b>Diretor:</b> Mike Cahill |  <b>Roteiro:</b> Mike Cahill | <b>Estreia:</b> 2021</p>
+                                    <p><b>Elenco: </b>Owen Wilson | Salma Hayek | Madeline Zima</p>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class = "container">
+                            <div class = "row" id="slides" >
+                                <div class = "col-lg-6 col-md-6" id="video">
+                                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/KplaWcFyrYU" id = "lancamento_video"></iframe>
+                                </div>
+                                <div class = "col-lg-6 col-md-6" id = "resumo">
+                                    <h4>Abaixo de Zero</h4>
+                                    <p><b>Sinopse:</b> Um ônibus penitenciário é atacado e o policial encarregado tem que enfrentar criminosos dentro e 
+                                    fora do veículo, além de um inimigo silencioso: o frio congelante.</p>
+                                    <p><b>Diretor:</b> Lluis Quilez | <b>Roteiro:</b> Fernando Navarro | <b>Estreia:</b> 2021</p>
+                                    <p><b>Elenco: </b>Javier Gutiérrez | Karra Elejalde | Luis Callejo</p>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+        </div>
+        
+        <!--Seção Em Destaque-->
+        <div class =  "container" id = "secao_destaques">
+            <div class="navbar">
+                <h4>Em destaque</h4>
+                <div class="dropdown" id = "drop_1">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Categoria:             
+                        <span class="dropdown-menu-arrow"></span>
+                    </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id = "box_menu">
+                          <li role="presentation" id = "menu_item"><a role="menuitem" href="#" id = "categoria_name">Aventura</a></li>
+                          <li role="presentation" id = "menu_item"><a role="menuitem" href="#" id = "categoria_name">Comédia</a></li>
+                          <li role="presentation" id = "menu_item"><a role="menuitem" href="#" id = "categoria_name">Romance</a></li>
+                          <li role="presentation" id = "menu_item"><a role="menuitem" href="#" id = "categoria_name">Suspense</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class = "row" id = "posters">
+                <div class = "col-3">
+                    <div class = "card">
+                        <div class = "card-body">
+                            <img src="http://www.nossocinema.com.br/wp-content/uploads/2021/02/eu-me-importo-CARTAZ-691x1024.jpg" 
+                            class = "card-img" alt="Eu Me Importo - Poster"  id = "img_posters">
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = "card">
+                        <div class = "card-body">
+                            <img src="https://cinepop.com.br/wp-content/uploads/2020/10/relatos-do-mundo.jpg" 
+                            class = "card-img" alt="Relatos do Mundo - Poster"  id = "img_posters">
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = "card">
+                        <div class = "card-body">
+                            <img src="https://br.web.img3.acsta.net/pictures/20/12/22/10/14/2835144.jpg" 
+                            class = "card-img" alt="Tigre Branco - Poster" id = "img_posters">
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = "card">
+                        <div class = "card-body">
+                            <img src="https://cdn.ome.lt/t508SlM04vfSs9pVw6Hx5Z9MumI=/fit-in/837x500/smart/uploads/conteudo/fotos/principe-em-nova-york.jpg" 
+                            class = "card-img" alt="Um Príncipe em Nova York 2 - Poster" id = "img_posters">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row" id = "row-btn">
+                <div class = "col-12" id = "col-btn">
+                    <button class = "btn" type = "button" id = "btn_mais">
+                    <span>&#43;</span> filmes</button>
+                </div>
+            </div>
+            <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id = "carousel2_conteudo">
+                    <div class="carousel-item active" id = "carousel2-item">
+                        <div class = "container">
+                            <div class = "row" id="slides2" >
+                                <div class = "col-12" id="poster2">
+                                    <div class = "card">
+                                        <div class = "card-body">
+                                            <img src="https://i2.wp.com/lesbout.com.br/wp-content/uploads/2021/03/i-care-a-lot-critica-netflix.jpg?resize=800%2C445" 
+                                            class = "card-img" alt="Eu Me Importo - Poster"  id = "carousel_posters">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id = "carousel2-item">
+                        <div class = "container">
+                            <div class = "row" id="slides2" >
+                                <div class = "col-12" id="poster2">
+                                    <div class = "card">
+                                        <div class = "card-body">
+                                            <img src="http://fmcidade.com/wp-content/uploads/sb-instagram-feed-images/156181839_4172596882752924_2226261904755041749_nfull.jpg" 
+                                            class = "card-img" alt="Relatos do Mundo - Poster"  id = "carousel_posters">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id = "carousel2-item">
+                        <div class = "container">
+                            <div class = "row" id="slides2" >
+                                <div class = "col-12" id="poster2">
+                                    <div class = "card">
+                                        <div class = "card-body">
+                                            <img src="https://blogs.uai.com.br/opipoqueiro/wp-content/uploads/sites/54/2021/02/O-Tigre-Branco-01.jpg" 
+                                            class = "card-img" alt="Tigre Branco - Poster"  id = "carousel_posters">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id = "carousel2-item">
+                        <div class = "container">
+                            <div class = "row" id="slides2" >
+                                <div class = "col-12" id="poster2">
+                                    <div class = "card">
+                                        <div class = "card-body">
+                                            <img src="https://spotlight.cdn.telefonica.com/customer/v1/source?image=http%3A%2F%2Fmedia.gvp.telefonica.com%2Fstoragearea0%2FIMAGES%2F00%2F08%2F42%2F8425955_7728AF7DA3546BE2.jpg&width=1400&height=787&resize=CROP&format=JPEG" 
+                                            class = "card-img" alt="Um Príncipe em Nova York 2 - Poster"  id = "carousel_posters">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+        </div>
+                
+        </div>
+        
+        <!--secao ultimas avaliacoes-->
+        <div class = "container" id = "ult_avali">
+            <div class = "row" id = "row-title">
+                <div  class = "col-12" >
+                    <h4 id = "ult_avali_title">Últimas avaliações</h4>
+                </div>
+            </div>
+            <div class = "row" id = "avaliacoes">
+                <div class = "col-4">
+                    <div class = "card" id = "avali_card">
+                        <div class = "card-header">
+                            <img src = "https://dstudiosphotography.com/wp-content/uploads/2019/01/Corporate-Headshots-3-square.jpg"
+                            alt = "Avaliador_1" class = "" id = "avaliador">
+                            <p id = "avaliador_name"><b>Maurício Almeida</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p id = "avali_text"><b>Avaliação: </b>Que agradável surpresa dos produtores de Stranger Things, Amor e Monstros é o mais 
+                            novo filme da Netflix. O ritmo do filme é ótimo, com certeza vai render boas risadas e 
+                            satisfatório entretenimento nas suas cenas de ação. </p>
+                        </div>
+                        <div class = "card-footer">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><p id = "data">20/04/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-4">
+                    <div class = "card" id = "avali_card">
+                        <div class = "card-header">
+                            <img src = "https://images.squarespace-cdn.com/content/v1/5c869a3765a70789cd2f45cb/1561643929478-ZN0ZQMLFESRTGL5CN7TK/ke17ZwdGBToddI8pDm48kHmLeEzARneXWVNN3KN0jJZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmlMqpINHCYwrjchQjceiMlVzRPhPN2AV6lVr4IpL0Z89NSReZj_I3-pvnrfPpd5Aa/Headshot-woman-red.jpg"
+                            alt = "Avaliador_1" class = "" id = "avaliador">
+                            <p id = "avaliador_name"><b>Fernanda Rocha</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p id = "avali_text"><b>Avaliação: </b>O filme não é de todo ruim, 
+                            Sarah Paulson é perfeita, mas a história é muito rápida e conclusiva, 
+                            fiquei com muitos porquês na cabeça. Algumas coisas não foram abordadas, 
+                            o filme é muito direto. Vale para entreter somente.</p>
+                        </div>
+                        <div class = "card-footer">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><p id = "data">19/04/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-4">
+                    <div class = "card" id = "avali_card">
+                        <div class = "card-header">
+                            <img src = "https://i.pinimg.com/originals/14/a1/c4/14a1c4ee0deba092c8547d19f43d55c4.png"
+                            alt = "Avaliador_1" class = "" id = "avaliador" width = 100% heigth = "auto">
+                            <p id = "avaliador_name"><b>João Paulo Costa</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p id = "avali_text"><b>Avaliação: </b>O filme consegue trazer uma conexão emocional, principalmente
+                            pelas atuações, que fazem com que tenhamos uma identificação com a história. Porém, ele não é o tipo
+                            de filme que vai te entregar respostas.</p>
+                        </div>
+                        <div class = "card-footer">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span><p id = "data">18/04/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row" id = "row-btn">
+                <div class = "col-12" id = "col-btn2">
+                    <button class = "btn" type = "button" id = "btn_mais">
+                    <span>&#43;</span> avaliações</button>
+                </div>
+            </div>
+            <div class =  "container" id = "carousel_avali">
+                <div id="carousel-3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class = "container">
+                                <div class = "row" id="slides3" >
+                                    <div class = "col-12" id="avali">
+                                        <div class = "card" id = "avali_card">
+                                            <div class = "card-header">
+                                                <img src = "https://dstudiosphotography.com/wp-content/uploads/2019/01/Corporate-Headshots-3-square.jpg"
+                                                alt = "Avaliador_1" class = "" id = "avaliador">
+                                                <p id = "avaliador_name"><b>Maurício Almeida</b></p>
+                                            </div>
+                                            <div class = "card-body">
+                                                <p id = "avali_text"><b>Avaliação: </b>Que agradável surpresa dos produtores de Stranger Things, Amor e Monstros é o mais 
+                                                novo filme da Netflix. O ritmo do filme é ótimo, com certeza vai render boas risadas e 
+                                                satisfatório entretenimento nas suas cenas de ação. </p>
+                                            </div>
+                                            <div class = "card-footer">
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span><p id = "data">20/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class = "container">
+                                <div class = "row" id="slides3" >
+                                    <div class = "col-12" id="avali">
+                                        <div class = "card" id = "avali_card">
+                                            <div class = "card-header">
+                                                <img src = "https://images.squarespace-cdn.com/content/v1/5c869a3765a70789cd2f45cb/1561643929478-ZN0ZQMLFESRTGL5CN7TK/ke17ZwdGBToddI8pDm48kHmLeEzARneXWVNN3KN0jJZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmlMqpINHCYwrjchQjceiMlVzRPhPN2AV6lVr4IpL0Z89NSReZj_I3-pvnrfPpd5Aa/Headshot-woman-red.jpg"
+                                                alt = "Avaliador_1" class = "" id = "avaliador">
+                                                <p id = "avaliador_name"><b>Fernanda Rocha</b></p>
+                                            </div>
+                                            <div class = "card-body">
+                                                <p id = "avali_text"><b>Avaliação: </b>O filme não é de todo ruim, 
+                                                Sarah Paulson é perfeita, mas a história é muito rápida e conclusiva, 
+                                                fiquei com muitos porquês na cabeça. Algumas coisas não foram abordadas, 
+                                                o filme é muito direto. Vale para entreter somente.</p>
+                                            </div>
+                                            <div class = "card-footer">
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star" id = "star"></span>
+                                                <span class="fa fa-star" id = "star"></span><p id = "data">19/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class = "container">
+                                <div class = "row" id="slides3" >
+                                    <div class = "col-12" id="avali">
+                                        <div class = "card" id = "avali_card">
+                                            <div class = "card-header">
+                                                <img src = "https://i.pinimg.com/originals/14/a1/c4/14a1c4ee0deba092c8547d19f43d55c4.png"
+                                                alt = "Avaliador_1" class = "" id = "avaliador" width = 100% heigth = "auto">
+                                                <p id = "avaliador_name"><b>João Paulo Costa</b></p>
+                                            </div>
+                                            <div class = "card-body">
+                                                <p id = "avali_text"><b>Avaliação: </b>O filme consegue trazer uma conexão emocional, principalmente
+                                                pelas atuações, que fazem com que tenhamos uma identificação com a história. Porém, ele não é o tipo
+                                                de filme que vai te entregar respostas.</p>
+                                            </div>
+                                            <div class = "card-footer">
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star checked" id = "star"></span>
+                                                <span class="fa fa-star" id = "star"></span><p id = "data">18/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                      </a>
+                </div>
+            </div>
+        </div>
+        
+        <!--Secao entrevistas e making of-->
+        <div class = "container-fluid" id = "secao_making">
+            <div class = "container-fluid">
+                <div class = "container" id = "container-making-title">
+                    <div class = "row" id = "row-making-title">
+                        <div class = "col-12" id= "col-making-title">
+                            <h4 id = "secao_making_title">Entrevistas & Making Of</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container" id = "container2-making">
+                    <div class= "row" id = "making_row">
+                        <div class= "col-4" id = "col-making-content">
+                            <div class = "card" id = "makingof1">
+                                <div class = "card-header">
+                                    <iframe src="https://www.youtube.com/embed/0HEvyxNJRks" id = "making_video"></iframe>
+                                    <p id = "filme_title"><b>Filme: </b>Aquaman</p>
+                                </div>
+                                <div class = "card-body">
+                                    <p><b>Diretor: </b>James Wan<br>
+                                    <b>Roteiro: </b>Will Beall | David Johnson<br>
+                                    <b>Estreia: </b>2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "col-4">
+                            <div class = "card" id = "makingof2">
+                                <div class = "card-header">
+                                    <iframe src="https://www.youtube.com/embed/_LNGugrCU7A" id = "making_video"></iframe>
+                                    <p id = "filme_title"><b>Filme: </b>Megatubarão</p>
+                                </div>
+                                <div class = "card-body">
+                                    <p><b>Diretor: </b>Jon Turteltaub<br>
+                                    <b>Roteiro: </b>Dean Georgaris | Jon Hoeber | Erich Hoeber  <b>Estreia: </b>2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "col-4">
+                            <div class = "card" id = "makingof3">
+                                <div class = "card-header">
+                                    <iframe src="https://www.youtube.com/embed/xViW5uZGdy0" id = "making_video"></iframe>
+                                    <p id = "filme_title"><b>Filme: </b>Invasão Zumbi</p>
+                                </div>
+                                <div class = "card-body">
+                                    <p><b>Diretor: </b>Yeon Sang-ho <br>
+                                    <b>Roteiro: </b>Park Joo-suk<br>
+                                    <b>Estreia: </b>2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row" id = "row-btn">
+                        <div class = "col-12" id = "col-btn3">
+                            <button class = "btn" type = "button" id = "btn_mais2">
+                            <span>&#43;</span> making of</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "container-fluid" id = "making_carousel">
+                <div id="carousel-4" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id = "carousel4_conteudo">
+                        <div class="carousel-item active" id = "carousel4-item">
+                            <div class = "container" id = "container_making">
+                                <div class = "row" id="slides4" >
+                                    <div class = "col-12" id="poster2">
+                                        <div class = "card">
+                                            <div class = "card-body">
+                                                <img src="https://mcmoutletonline.com/pics/now-box-movies-3.jpg" 
+                                                class = "card-img" alt="Aquaman - Making Of"  id = "carousel_makingof">
+                                                <div class="center" id = "chamada_video"><a href = "https://www.youtube.com/embed/0HEvyxNJRks" id = "clique_makingof">
+                                                    <b>Clique para assistir ao making of de Aquaman  &#8594</b>
+                                                </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id = "carousel4-item">
+                            <div class = "container" id = "container_making">
+                                <div class = "row" id="slides4" >
+                                    <div class = "col-12" id="poster2">
+                                        <div class = "card">
+                                            <div class = "card-body">
+                                                <img src="https://2.bp.blogspot.com/-cH76G9LIaS4/Wlky7Ya9yZI/AAAAAAAAHY0/bmZ9pY4uz_gNd3Bn_i4ecmXp-h40UHbYgCLcBGAs/s1600/the-meg-01.jpg" 
+                                                class = "card-img" alt="Megatubarão - Making Of"  id = "carousel_makingof">
+                                                <div class="center" id = "chamada_video"><a href = "https://www.youtube.com/embed/_LNGugrCU7A" id = "clique_makingof">
+                                                    <b>Clique para assistir ao making of de Megatubarão  &#8594</b>
+                                                </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id = "carousel4-item">
+                            <div class = "container" id = "container_making">
+                                <div class = "row" id="slides4" >
+                                    <div class = "col-12" id="poster2">
+                                        <div class = "card">
+                                            <div class = "card-body">
+                                                <img src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaVe6ggnA1RwJoLpUpHY6kPAsD6wT5DSRfQTQq-zu8kx3FJ2QHlyF-85PnOJ4bq8tXXnFUtBIkhKxirYrYyHfiLKbb31.jpg?r=f5e" 
+                                                class = "card-img" alt="Invasão Zumbi - Making Of"  id = "carousel_makingof">
+                                                <div class="center" id = "chamada_video"><a href = "https://www.youtube.com/embed/xViW5uZGdy0" id = "clique_makingof">
+                                                    <b>Clique para assistir ao making of de Invasão Zumbi  &#8594</b>
+                                                </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--Secao novidades e sobre-->
+        <div class = "container" id = "novidade_sobre">
+            <div class= "row" id = "novidade_sobre_row">
+                <div class = "col-8" id = "col_novidade">
+                    <h4 id = "novidade_title">Novidades</h4>
+                </div>
+                <div class = "col-4" id = "sobre1">
+                    <h4 id = "sobre_title">Sobre</h4>   
+                </div>
+                <!--<div class = "col-4" id = "sobre2">
+                    <h4 id = "sobre_title2">Sobre</h4>   
+                </div>-->
+            </div>
+            <div class = "row" id = "cada_novidade">
+                <div class = "col-8" id = "col_novi">
+                    <img src="http://s2.glbimg.com/vdwgCj5PrrAy8i60Jwf7sJFb5j0=/s.glbimg.com/og/rg/f/original/2015/06/30/toy-story-3-606.jpg" id = "novi_img">
+                    <div class = "card" id = "materia_card">
+                        <div class = "card-header">
+                            <p id = "materia_title"><b>Sessão da Tarde de hoje (21/04): Toy Story 3 quebrou recorde HISTÓRICO no Oscar; 
+                            entenda</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p>Além de ter vencido duas estatuetas no Oscar, Toy Story 3 fez história na premiação e arrecadou mais de 
+                            um bilhão de dólares mundialmente<a href="#"> . . . Leia mais</a>
+                            </p>
+                            <div class="row" id = "row-tag">
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">toy story</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">sessão da tarde</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">oscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr id = "hr1">
+                </div>
+                <div class = "col-4" id = "col_text2">
+                    <p>Este é um site criado a partir do trabalho prático na matéria de Desenvolvimento de Interfaces Web, no curso
+                    de Ciência da Computação, na Pontifícia Universidade Católica de Minas Gerais.<br>
+                    A ideia do trabalho é simular um portal de filmes, usando recursos de programação que permitam ao site ser responsivo,
+                    ou seja, adaptar-se a vários tipos de resolução de tela e dispositivos.
+                    </p>
+                </div>
+            </div>
+            <div class = "row" id = "cada_novidade">
+                <div class = "col-8" id = "col_novi2">
+                    <img src="https://veja.abril.com.br/wp-content/uploads/2019/03/ultimato-b-1-e1553606166939.jpg" id = "novi_img">
+                    <div class = "card" id = "materia_card">
+                        <div class = "card-header">
+                            <p id = "materia_title"><b>Entenda como a Marvel fez para escolher alguns dos seus super-heróis</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p>Descubra como Robert Downey Jr., Chris Evans, Scarlett Johansson e outras estrelas foram escolhidos 
+                                para protagonizar os filmes da Marvel<a href="#"> . . . Leia Mais</a>
+                            </p>
+                            <div class="row" id = "row-tag" >
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">marvel</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">os vingadores</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">hollywood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr id = "hr2">
+                </div>
+                <div class = "col-4" id = "editorial_text">
+                    <h4 id = "editorial_title">Editorial</h4><br>
+                    <p id = "my_id"><i class="fa fa-user" title="User" id = "my_user"></i></i><b>Redação: </b>Ana Souza</p>
+                    <p id = "my_id"><i class="fa fa-user" title="User" id = "my_user"></i><b>Pesquisa: </b>Ana Souza</p>
+                    <p id = "my_id"><i class="fa fa-user" title="User" id = "my_user"></i><b>Gerente Geral: </b>Ana Souza</p><br>
+                </div>
+            </div>
+            <div class = "row" id = "cada_novidade">
+                <div class = "col-8" id = "col_novi2">
+                    <img src="https://f.i.uol.com.br/fotografia/2021/04/14/161841832860771a9834492_1618418328_3x2_md.jpg" id = "novi_img">
+                    <div class = "card" id = "materia_card">
+                        <div class = "card-header">
+                            <p id = "materia_title"><b>Depois de Velozes & Furiosos 9, Vin Diesel já se prepara para lançar mais uma franquia 
+                            de filmes baseada em jogo</b></p>
+                        </div>
+                        <div class = "card-body">
+                            <p>O ator que também estará em Avatar 2 e faz parte dos filmes da Marvel, tem faro para grandes sucessos de ação 
+                            e não parece querer parar tão cedo<a href="#"> . . . Leia mais</a>
+                            </p>
+                            <div class="row" id = "row-tag">
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">velozes&furiosos</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">vin diesel</button>
+                                </div>
+                                <div class = "col-4" id = "col-tag">
+                                    <button type = "button" class = "btn" id = "tag-btn">hollywood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-4">
+                    <h5 id = "redes_sociais">Redes Sociais:</h5>
+                    <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class = "row" id = "responsive_novidade_sobre">
+                <div class = "col-12">
+                    <ul id = "lista_de_novidade">
+                        <li>
+                            <p id = "materia_title">Sessão da Tarde de hoje (21/04): Toy Story 3 quebrou recorde HISTÓRICO no Oscar; 
+                                entenda <a href = "#" id = "leia_mais_arrow">&rarr;</a></p>
+                        </li>
+                        <hr>
+                        <li>
+                            <p id = "materia_title">Entenda como a Marvel fez para escolher alguns dos seus super-heróis
+                            <a href = "#" id = "leia_mais_arrow">&rarr;</a></p>
+                        </li>
+                        <hr>
+                        <li>
+                            <p id = "materia_title">Depois de Velozes & Furiosos 9, Vin Diesel já se prepara para lançar mais uma franquia 
+                            de filmes baseada em jogo <a href = "#" id = "leia_mais_arrow">&rarr;</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "row" id = "sobre_row">
+                    <div class = "col-12" id = "sobre2">
+                        <h4 id = "sobre_title2">Sobre</h4>
+                        <ul id = "lista_sobre">
+                            <li>
+                                <p id = "sobre_items">Este é um site criado a partir do trabalho prático na matéria de Desenvolvimento de Interfaces Web, no curso
+                                    de Ciência da Computação, na Pontifícia Universidade Católica de Minas Gerais.<br>
+                                    A ideia do trabalho é simular um portal de filmes, usando recursos de programação que permitam ao site ser responsivo,
+                                    ou seja, adaptar-se à vários tipos de resolução de tela e dispositivos.
+                                </p>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+                <div class = "row" id = "editorial_row">
+                    <div class = "col-12" id = "editorial-col">
+                        <h4 id = "editorial_title">Editorial</h4>
+                        <ul id = "lista_editorial">
+                            <li>
+                                <p id = "editorial_items"><i class="fa fa-user" title="User" id = "my_user"></i></i><b>Redação: </b>Ana Souza</p>
+                            </li>
+                            <li>
+                                <p id = "editorial_items"><i class="fa fa-user" title="User" id = "my_user"></i><b>Pesquisa: </b>Ana Souza</p>
+                            </li>
+                            <li>
+                                <p id = "editorial_items"><i class="fa fa-user" title="User" id = "my_user"></i><b>Gerente Geral: </b>Ana Souza</p><br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "row" id = "redes-row">
+                    <div class = "col-12" id = "redes-col">
+                        <h4 id = "redes_title">Redes Sociais</h4>
+                        <a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--rodape-->
+        <div class = "container-fluid" id = "rodape">
+            <div class = "row" id = "rodape_row">
+                <div class = "col-8" id="direitos_autorais">
+                    <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+                </div>
+                <div class = "col-4" id = "logo-col">
+                    <img src = "./logo-Almacine.png" alt = "Logo" id = "logo_rodape">
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery and JS bundle w/ Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
